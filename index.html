@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>SocialZone</h1>
+    <nav>
+      <button>Home</button>
+      <button>Profile</button>
+      <button>Messages</button>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <img src="https://via.placeholder.com/100" class="profile-pic" alt="Profile" />
+    <h2>@Sachin._.Saini</h2>
+    <p class="bio">Web enthusiast & coder ✨</p>
+    <button id="followBtn">Follow</button>
+  </section>
+
+  <!-- Post Creation -->
+  <section class="create-post">
+    <textarea id="postText" placeholder="What's on your mind?"></textarea>
+    <button onclick="createPost()">Post</button>
+  </section>
+
+  <!-- Feed -->
+  <section class="feed" id="feed">
+    <!-- Posts will appear here -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

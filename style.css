@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  padding: 10px;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #1877f2;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  margin: 0 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #1877f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bio {
+  font-style: italic;
+  margin: 5px 0;
+  color: #555;
+}
+
+#followBtn {
+  padding: 6px 14px;
+  background-color: #42b72a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Create Post */
+.create-post {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.create-post button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.post p {
+  margin-bottom: 10px;
+}
+
+.like-button {
+  background-color: #e4e6eb;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.liked {
+  background-color: #ff3b3b;
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  nav button {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .create-post textarea {
+    width: 100%;
+  }
+}
